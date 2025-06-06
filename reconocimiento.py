@@ -62,7 +62,8 @@ def obtener_embedding(imagen):
 detector_emociones = FER(mtcnn=True)  
 
 
-cap = cv2.VideoCapture("http://192.168.0.2:8080/video")
+cap = cv2.VideoCapture(0)
+#"http://192.168.0.2:8080/video"
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 print("Presiona 'q' para salir.")
